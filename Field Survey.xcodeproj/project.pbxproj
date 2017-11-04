@@ -13,6 +13,14 @@
 		4D3874CC1FACD7BF00BD155B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3874CA1FACD7BF00BD155B /* LaunchScreen.storyboard */; };
 		4D3874D71FACD7BF00BD155B /* Field_SurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3874D61FACD7BF00BD155B /* Field_SurveyTests.swift */; };
 		4D3874E21FACD7BF00BD155B /* Field_SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3874E11FACD7BF00BD155B /* Field_SurveyUITests.swift */; };
+		4D3874F71FACDE8300BD155B /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D3874F61FACDE8300BD155B /* field_observations.json */; };
+		4D3874F91FACDF7B00BD155B /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3874F81FACDF7B00BD155B /* Animals.swift */; };
+		4D3874FB1FACE1C200BD155B /* animalsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3874FA1FACE1C200BD155B /* animalsEvent.swift */; };
+		4D3874FD1FACE73F00BD155B /* animalsEventsJSONparser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3874FC1FACE73F00BD155B /* animalsEventsJSONparser.swift */; };
+		4D3874FF1FACF9FC00BD155B /* AnimalsEventsJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3874FE1FACF9FC00BD155B /* AnimalsEventsJSONLoader.swift */; };
+		4D3875011FAD024700BD155B /* AnimalEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3875001FAD024700BD155B /* AnimalEventsViewController.swift */; };
+		4D3875031FAD02CC00BD155B /* AnimalEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3875021FAD02CC00BD155B /* AnimalEventDetailsViewController.swift */; };
+		4D3875051FAD19A100BD155B /* AnimalEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3875041FAD19A100BD155B /* AnimalEventTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,14 @@
 		4D3874DD1FACD7BF00BD155B /* Field SurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Field SurveyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3874E11FACD7BF00BD155B /* Field_SurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field_SurveyUITests.swift; sourceTree = "<group>"; };
 		4D3874E31FACD7BF00BD155B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D3874F61FACDE8300BD155B /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		4D3874F81FACDF7B00BD155B /* Animals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
+		4D3874FA1FACE1C200BD155B /* animalsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalsEvent.swift; sourceTree = "<group>"; };
+		4D3874FC1FACE73F00BD155B /* animalsEventsJSONparser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalsEventsJSONparser.swift; sourceTree = "<group>"; };
+		4D3874FE1FACF9FC00BD155B /* AnimalsEventsJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsEventsJSONLoader.swift; sourceTree = "<group>"; };
+		4D3875001FAD024700BD155B /* AnimalEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEventsViewController.swift; sourceTree = "<group>"; };
+		4D3875021FAD02CC00BD155B /* AnimalEventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEventDetailsViewController.swift; sourceTree = "<group>"; };
+		4D3875041FAD19A100BD155B /* AnimalEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEventTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +111,15 @@
 		4D3874C01FACD7BF00BD155B /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
+				4D3874EF1FACDC2300BD155B /* Model */,
 				4D3874C11FACD7BF00BD155B /* AppDelegate.swift */,
 				4D3874C51FACD7BF00BD155B /* Main.storyboard */,
 				4D3874C81FACD7BF00BD155B /* Assets.xcassets */,
 				4D3874CA1FACD7BF00BD155B /* LaunchScreen.storyboard */,
 				4D3874CD1FACD7BF00BD155B /* Info.plist */,
+				4D3875001FAD024700BD155B /* AnimalEventsViewController.swift */,
+				4D3875021FAD02CC00BD155B /* AnimalEventDetailsViewController.swift */,
+				4D3875041FAD19A100BD155B /* AnimalEventTableViewCell.swift */,
 			);
 			path = "Field Survey";
 			sourceTree = "<group>";
@@ -120,6 +140,18 @@
 				4D3874E31FACD7BF00BD155B /* Info.plist */,
 			);
 			path = "Field SurveyUITests";
+			sourceTree = "<group>";
+		};
+		4D3874EF1FACDC2300BD155B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D3874F61FACDE8300BD155B /* field_observations.json */,
+				4D3874F81FACDF7B00BD155B /* Animals.swift */,
+				4D3874FA1FACE1C200BD155B /* animalsEvent.swift */,
+				4D3874FC1FACE73F00BD155B /* animalsEventsJSONparser.swift */,
+				4D3874FE1FACF9FC00BD155B /* AnimalsEventsJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D3874CC1FACD7BF00BD155B /* LaunchScreen.storyboard in Resources */,
+				4D3874F71FACDE8300BD155B /* field_observations.json in Resources */,
 				4D3874C91FACD7BF00BD155B /* Assets.xcassets in Resources */,
 				4D3874C71FACD7BF00BD155B /* Main.storyboard in Resources */,
 			);
@@ -256,7 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3875051FAD19A100BD155B /* AnimalEventTableViewCell.swift in Sources */,
+				4D3875011FAD024700BD155B /* AnimalEventsViewController.swift in Sources */,
 				4D3874C21FACD7BF00BD155B /* AppDelegate.swift in Sources */,
+				4D3874FD1FACE73F00BD155B /* animalsEventsJSONparser.swift in Sources */,
+				4D3874FB1FACE1C200BD155B /* animalsEvent.swift in Sources */,
+				4D3874F91FACDF7B00BD155B /* Animals.swift in Sources */,
+				4D3875031FAD02CC00BD155B /* AnimalEventDetailsViewController.swift in Sources */,
+				4D3874FF1FACF9FC00BD155B /* AnimalsEventsJSONLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
